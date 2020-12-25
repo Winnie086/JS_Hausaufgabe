@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <style>
+    li:not(.hot){
+      color:blue;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+  <div id="page">
+    <h1 id="head">My jQuery Demo List</h1>
+    <h1 style="background-color:black;color: white;width:120px">My List</h1>
+    <ul>
+      <li id="one" class="hot"><b>essen</b> irgendwas</li>
+      <li id="two" class="hot">ueben Code</li>
+      <li id="three" class="hot">spielen Cello</li>
+      <li id="four" class="hot">immer noch schlafen</li>
+      <!-- $("#one").add("#two") = $("#one,#two") -->
+      <!-- $("li:not(.hot)") = $("li").not(".hot") -->
+      <!-- $("div>h1")找兒子、$("div h1")找孫子 -->
+      <!-- $("li:eq(2)") = $("li").eq(2) -->
+      <!-- $("ul").remove() 整個移除-->
+      <!-- $("ul").detach() 暫時移除-->
+      <!-- $("#page>h1").attr("style","color:red") -->
+      <!-- $(".container").find("div")=$(".container div")  找尋container中所有的div -->
+      <!-- $(".container *") 找尋container中所有的物件 -->
+      <!-- $("#head").siblings("div") 找尋head的鄰居siblings的div-->
+      <!-- $("#page").children("h1") 找尋page的孩子的h1-->
+      <!-- $("#page>h1").css("height")查詢page的h1的高度-->
+    </ul>
+  </div>
+
+    <div title="second">
+      <h2>Lorem qum.</h2>
+    </div>
+    
+    <div title="third">
+      <h2>Lorem ipsuma</h2>
+    </div>
+
+  </div>
+    <hr>
+
+    <input type="text" name="text" value="TEXT">
+    <input type="button" value="BTN">
+    <input type="radio" name="sex" value="Man">Man
+    <input type="radio" name="sex" value="Frau">Frau
+    <textarea name="" id="" cols="20" rows="10"></textarea>
+
+</body>
+</html>

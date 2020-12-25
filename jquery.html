@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <style>
+  .whatever {
+    font-size: 8rem;
+    text-decoration:underline overline;
+  }
+
+</style>
+
+</head>
+<body>
+  <h1>Halo <span>W</span>elt</h1>
+  <p class="txt">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sequi veniam nisi obcaecati dignissimos inventore? Officiis laboriosam iure ipsa debitis, eligendi adipisci quod incidunt illo molestiae? Inventore quisquam possimus excepturi.
+  </p>
+  <script>
+    console.log($("h1"));
+    console.log(jQuery("h1"));
+
+    $("h1").css("color","blue").addClass("whatever");
+    $("h1>span").css("color","black")
+
+  </script>
+
+</body>
+</html>
